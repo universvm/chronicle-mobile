@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.1455cc3fed43aab4f538a6d832e61ceb.js"
+  "/precache-manifest.78355531a0cea0f1cb6c44853d826188.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "chronicle"});

@@ -1,36 +1,51 @@
 <template>
   <div id="app">
     <router-view/>
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/questions">Questions</router-link>
-    </div>
+    <Nav/>
   </div>
 </template>
 
+<script>
+  import Nav from "@/components/Nav/Nav.vue"
+  
+  export default{
+    components: {
+      Nav
+    },
+
+  }
+
+</script>
+
 <style>
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900&display=swap');
+
 body{
   border: 0;
   margin: 0;
+  background-color: #E7ECFF;
 }
+
+button{
+  font-family: 'Source Sans Pro', sans-serif;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+button:focus{
+  outline: 0;
+}
+
+  
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  width: 100%;
-  height: 100%;
-  background-color: #2c3e50;
   border: 0;
   margin: 0;
-}
-#nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 10px;
-  padding: 30px;
 }
 
 #nav a {
@@ -39,6 +54,6 @@ body{
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #2275D3;
 }
 </style>
